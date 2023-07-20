@@ -32,6 +32,7 @@ public class ExpenseControllerTests :IClassFixture<FinanceControlApplicationFact
         Assert.Equal(HttpStatusCode.Created, response.StatusCode);
         Assert.Equal(-150, balanceResponse.Balance);
         
+        //Caso tenha que executar mais testes que dependam do banco de dados, descomentar a linha abaixo
         //await _webApplicationFactory.ClearDatabaseAsync();
     }
     

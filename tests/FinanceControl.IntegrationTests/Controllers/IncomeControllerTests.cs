@@ -52,6 +52,7 @@ public class IncomeControllerTests : IClassFixture<FinanceControlApplicationFact
         Assert.Equal(150, incomeAddedProducedEvent!.Value);
         Assert.Equal("IncomeAddedEvent", incomeAddedProducedEvent.EventName);
 
+        //Caso tenha que executar mais testes que dependam do banco de dados, descomentar a linha abaixo
         //await _webApplicationFactory.ClearDatabaseAsync();
     }
     
