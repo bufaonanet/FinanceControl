@@ -4,7 +4,7 @@
 
 ## Descrição do Projeto
 
-O projeto FinanceControl é uma demonstração de como implementar testes de integração em um projeto ASP.NET 6. Todos os passos implementados neste projeto foram baseados na aula do canal [![Implementando Testes de Integração em .NET com Docker](https://www.youtube.com/watch?v=o5Q73A-rrlg).
+O projeto FinanceControl é uma demonstração de como implementar testes de integração em um projeto ASP.NET 6. Todos os passos implementados neste projeto foram baseados na aula do canal [Live #69: Implementando Testes de Integração em .NET com Docker](https://www.youtube.com/live/o5Q73A-rrlg?feature=share).
 
 A API principal, denominada "FinanceControl.Api", é uma Web API para o controle de finanças que expõe três controladores: `BalanceController`, `ExpensesController` e `IncomesController`. A aplicação utiliza o banco de dados Postgres para armazenar as informações financeiras e o Kafka para armazenar os eventos criados. Os endpoints da API são documentados e testáveis por meio do Swagger.
 
