@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres
+    container_name: postgres_container
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: FinanceControl
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: P@ssw0rd
+
+  kafka:
+    image: bashj79/kafka-kraft
+    container_name: kafka_container_custom
+    restart: always
+    ports:
+      - "9092:9092"
